@@ -676,7 +676,7 @@ export default function graphql<
     }
 
     // Make sure we preserve any custom statics on the original component.
-    return hoistNonReactStatics(GraphQL, WrappedComponent, {});
+    return hoistNonReactStatics(GraphQL, WrappedComponent, operationOptions.hoistBlacklist || {});
   }
 
   return wrapWithApolloComponent;

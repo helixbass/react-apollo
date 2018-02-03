@@ -135,4 +135,5 @@ export interface OperationOption<
   withRef?: boolean;
   shouldResubscribe?: (props: TProps, nextProps: TProps) => boolean;
   alias?: string;
+  hoistBlacklist?: string;
 }
